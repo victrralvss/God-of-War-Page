@@ -1,0 +1,90 @@
+.subtitle{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    span{
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    margin-bottom: 2.8rem;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 12.4rem;
+    line-height: 97.5%;
+    font-stretch: 110;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 130%;
+    margin-bottom: 2.4rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 160%;
+    color: #BDC2CB;
+}
+
+.card-character{
+    width: 100%;
+    max-width: 38.4rem;
+    .imagem{
+        position: relative;
+        width: 100%;
+        height: 52rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        img{
+            transition: all .3s ease;
+        }
+
+        button{
+            position: absolute;
+            bottom: 0;
+            padding: 1.8rem 3.6rem;  
+            background-color: #3265EA;          
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            opacity: 0;
+            transition: all .3s ease;
+        }
+    }
+
+    .info{
+        h3{
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            margin-bottom: 0.5rem;
+                
+        }
+
+        span{
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    &:hover{
+        .imagem{
+            img{
+                transform: scale(1.1);
+            }
+            button{
+                opacity: 1;
+                bottom: 7.5rem;
+            }
+        }
+        
+    }
+}

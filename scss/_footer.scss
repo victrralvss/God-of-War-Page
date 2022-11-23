@@ -1,0 +1,57 @@
+.characters{
+    background-image: url("/img/assets/bg-characters.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 138.8rem;
+    padding-top: 17.6rem;
+    padding-bottom: 8.4rem;
+
+    .container{
+        width: 100%;
+        max-width: 143.3rem;
+        height: 50.5rem;     
+
+        .description{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .call{
+                width: 100%;
+                max-width: 61.2rem;
+                height: 35.7rem;
+    
+                p{
+                    font-size: 2rem;
+                }
+            }
+            
+            .kratos-axe{
+                width: 100%;
+                margin-left: 12.2rem;
+                width: 42.8rem;
+                height: 100%;
+            }
+    
+            .launch{
+                width: 100%;
+                max-width: 21.8rem;
+                height: 13rem;
+                align-self: center;
+                
+                img{
+                    width: 100%;
+                    margin-bottom: 2.2rem;
+                }
+            }
+        }
+
+        
+    }
+
+    .card-container{
+        overflow: hidden;
+
+    }
+}
