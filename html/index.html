@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/main.min.css"> 
     <meta charset="UTF-8">
@@ -34,7 +35,7 @@
 
     <section class="pre-order">
         <div class="container">
-            <div class="left">
+            <div class="left" data-aos="fade-right">
 
                 <h3 class="subtitle">
                     <img src="/img/assets/bullets.svg" alt="">
@@ -44,13 +45,13 @@
                 <h1>God of War Ragnarök</h1>
                 <p>Os maiores heróis dos nove reinos, lutando por um futuro em que acreditam.</p>
                 <div class="value">
-                    <strong>R$ 349,90</strong>
+                    <div class="price"><strong>R$ 349,90</strong></div>
                     <a href="https://www.playstation.com/pt-br/games/god-of-war-ragnarok/" target="_blank">Comprar</a>
                 </div>
 
             </div>
 
-            <div class="right">
+            <div class="right" data-aos="fade-left">
                 <h3>Assista ao trailer</h3>
                 <button class="player">
                     <img src="/img/assets/thumbnail.gif" alt="trailer">
@@ -68,46 +69,69 @@
         </div>
     </section>
 
-    <section class="game-info">
+    <section class="game-info" >
         <div class="container">
-            <ul>
-                <li>
-                    <img src="/img/assets/icon-game-offline.png">
-                    <p>Jogo offline habilitado</p>
-                </li>
-                <li>
-                    <img src="/img/assets/icon-singleplayer.png">
-                    <p>1 jogador</p>
-                </li>
-                <li>
-                    <img src="/img/assets/icon-use-remote.png">
-                    <p>Compatível com uso remoto</p>
-                </li>
-                <li>
-                    <img src="/img/assets/icon-function-vibration.png">
-                    <p>Função de vibração necessária</p>
-                </li>
-                <li>
-                    <img src="/img/assets/icon-effect.png">
-                    <p>Efeito gatilho necessário</p>
-                </li>
-                <li>
-                    <img src="/img/assets/icon-psn-plus.png">
-                    <p>Compatível com a ajuda do jogo</p>
-                </li>
-            </ul>
-        </div>
+
+            <div class="swiper features" data-aos="fade-up">
+                <div class="swiper-wrapper features-wrapper">
+                  
+                  <div class="swiper-slide">
+                    <div class="feature-item">
+                        <img src="/img/assets/icon-game-offline.png">
+                        <p>Jogo offline habilitado</p>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <div class="feature-item">
+                        <img src="/img/assets/icon-singleplayer.png">
+                        <p>1 jogador</p>
+                    </div>             
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <div class="feature-item">
+                        <img src="/img/assets/icon-use-remote.png">
+                        <p>Compatível com uso remoto</p>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <div class="feature-item">
+                        <img src="/img/assets/icon-function-vibration.png">
+                        <p>Função de vibração necessária</p>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <div class="feature-item">
+                        <img src="/img/assets/icon-effect.png">
+                        <p>Efeito gatilho necessário</p>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <div class="feature-item">
+                        <img src="/img/assets/icon-psn-plus.png">
+                        <p>Compatível com a ajuda do jogo</p>
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="swiper-button-next arrow"></div>
+                <div class="swiper-button-prev arrow"></div>
+            </div>
     </section>
 
     <section class="history">
         <div class="container">
 
-            <div class="history-info">
+            <div class="history-info" data-aos="fade-right" >
                 <h3 class="subtitle">
                     <img src="/img/assets/bullets.svg" alt="bullet">
                     <span>Sony Interactive Entertainment</span>
                 </h3>
-                <h2>Embarque com <br> Kratos e Atreus em <br> uma jornada épica</h2>
+                <h2>Embarque com Kratos e Atreus em uma jornada épica</h2>
                 <p>O Fimbulwinter já começou. Kratos e Atreus devem viajar pelos Nove Reinos em busca de respostas enquanto as forças asgardianas se preparam para uma batalha profetizada que causará o fim do mundo.
                     Nessa jornada, eles explorarão paisagens míticas impressionantes e enfrentarão inimigos aterradores: deuses nórdicos e monstros.
                     A ameaça do Ragnarök se aproxima. Kratos e Atreus terão de escolher entre a segurança deles próprios e a dos reinos.
@@ -120,14 +144,14 @@
                 </div>
             </div>
 
+            <img src="/img/assets/kratos-atreus.png" alt="Kratos e Atreus" class="main-characteres" data-aos="fade-left">
 
-            <img src="/img/assets/kratos-atreus.png" alt="Kratos e Atreus" class="main-characteres">
         </div>
     </section>
 
     <section class="characters">
         <div class="container">
-            <div class="description">
+            <div class="description" data-aos="fade-right">
                 <div class="call">
                     <h3 class="subtitle">
                         <img src="/img/assets/bullets.svg" alt="">
@@ -138,7 +162,7 @@
                     <p>Reviva o começo da jornada nórdica épica de Kratos e Atreus em Mitos de Midgard. Um alerta para quem não está familiarizado com God of War: spoilers à frente.</p>
                 </div>
 
-                <img src="/img/assets/axel.png" alt="leviatã" class="kratos-axe">
+                <img src="/img/assets/axel.png" alt="leviatã" class="kratos-axe" >
 
                 <div class="launch">
                     <img src="/img/assets/logo-game.png">
@@ -146,7 +170,7 @@
 
             </div>
             
-            <div class="card-container">
+            <div class="card-container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
 
                 <div class="slide-characters">
                     <div class="swiper-wrapper">
@@ -239,6 +263,7 @@
     
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script> 
 </body>

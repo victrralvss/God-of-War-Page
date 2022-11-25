@@ -4,7 +4,9 @@
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 16.4rem;
-    padding-bottom: 10.3rem;
+    padding-bottom: 1.3rem;
+    height: auto;
+    background-color: hsl(0, 0%, 0%);
 
 
     .container{
@@ -12,7 +14,7 @@
         justify-content: space-between;
         height: 53.2rem;
         margin-bottom: 2.4rem;
-        position: relative;
+        gap: 2.5rem;
 
         .left{
             width: 100%;
@@ -32,30 +34,45 @@
             .value{
                 display: flex;
                 align-items: center;
-                strong{
-                    padding: 1.8rem 3.6rem;
-                    background-color: #ffffff;
-                    color: #000000;
-                    font-weight: 700;
-                    font-size: 2rem;
-                    line-height: 2.2rem;
+                width: 100%;
+                max-width: 45.1rem;
+                height: 5.8rem;
+                border-radius: 50px;
+                justify-content: start;
+                border: 2px solid transparent;
+                overflow: hidden;
+                
+                .price{
+
+                    strong{
+                        padding: 1.8rem 3.6rem;
+                        background-color: #FFFFFF;
+                        text-align: center;
+                        color: #000000;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        line-height: 2.2rem;
+
+                        border-collapse: collapse;
+                    } 
                 }
+               
 
                 a{
                     display: block;
                     text-align: center;
                     padding: 1.8rem 3.6rem;
-                    width: 28.3rem;
-                    height: 5.8rem;
-                    background: #3265EA;
+                    background-color:  #3265EA;
                     font-weight: 700;
                     font-size: 1.6rem;
                     line-height: 2.2rem;
                     text-transform: uppercase;
                     transition: all .3s ease;
+                    flex-grow: 2;
+
                     &:hover{
                         font-size: 1.5rem;
-                        background: #092b80
+                        background: #092b80;
                     }
                 }
             }
@@ -100,7 +117,7 @@
             }
 
             .min-age{
-                margin-top: 4.2rem;
+                margin-top: 2rem;
                 display: flex;
                 align-items: center;
                 justify-content: start;
@@ -116,53 +133,206 @@
         }
     }
 
-}
 
-.game-info{
-    height: 18rem;
-    display: flex;
-    align-items: center;
-    background-color: #090A0A;
-    max-width: 192rem;
-    margin: 0 auto;
 
-    .container{
+    @media(max-width: 1200px){
+        height: auto;
+        background-size: cover;
 
-        ul{
-            display: flex;
+        .container{
+            
             align-items: center;
+            .left{
+                padding: 0 2.5rem;
+
+                p{font-size: 1.8rem;}
+                
+                .value{
+                    .price{
+                        strong{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    a{
+                        font-size: 1.6rem;  
+                    }
+                }
+            }
+            
+            .right{
+                .player{
+                    max-width: 40.3rem;
+                }
+            } 
+        }
+                
+    }
+
+    @media(max-width: 991px){
+
+        .container{
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: 1rem 2rem;
             justify-content: space-between;
-            padding: 0;
-            margin: 0;
 
-
-            li{
+            .left{
+                text-align: center;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 align-items: center;
-                height: 6.8rem;
+                margin-bottom: 5rem;
+                .value{
+                    justify-content: center;
+                }
+
+            }
+
+            .right{
+
+                padding: 0;
+                align-self: auto;
+          
+
+                .player{
+                    width: 100%;
+                    max-width: 46.3rem;
+                }
+            }
+        }     
+    }
+
+    @media(max-width: 600px){
+        width: 100%;
+        padding: 2rem 0;
+
+        .container{
+            padding: 1rem 5rem;
+
+            .left{
+                h1{
+                    font-size: 6rem;
+                }
 
                 p{
                     font-size: 1.6rem;
                 }
 
-                img{
-                    width: 100%;
-                    max-width: 3.14rem;
-                    animation: bounce 3s infinite alternate;
+                .value{
+                    border: 3px solid #FFFFFF;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    gap: 0.3rem;
 
-                    @keyframes bounce {
-                        from {
-                            transform: translateY(0rem);
-                          }
-                          to {
-                            transform: translateY(-1.1rem);
-                          }
+                    .price{
+                        padding: 0;
+                        strong{
+                            padding: 0;
+                            background: none;
+                            color: #FFFFFF;
+                        }  
+                    }
+                    
+                    a{
+                        padding: 0;
+                        background-color:  transparent;
+
+                        &:hover{
+                            background-color:  transparent;
+                            font-size: 1.5rem;
+                        }
+
                     }
                 }
-            }           
+            }
+
+            .right{
+
+                h3{
+                    font-size: 1.5rem;
+                }
+
+                .player{
+                    a{
+                        bottom: 1.5rem;
+                        left: 1.5rem; 
+                    }
+                }
+
+                .min-age{
+                    width: 100%;
+                    img{
+                        width: 3.5rem;
+                    }
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
+
+    }
+
+}
+
+.game-info{
+   
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 0%);
+    margin: 0 auto;
+
+    .container{ 
+        display: flex;
+        height: 18rem;
+        max-width: 192.8rem;
+        background-color: #090A0A;
+        align-items: center ;
+
+        .features{
+            padding: 2rem 1.6rem;
+            .features-wrapper{     
+                display: flex;
+                flex-grow: 3;  
+                .feature-item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: auto;
+                    text-align: center;
+                    
+        
+                    p{
+                        font-size: 1.6rem;
+                    }
+        
+                    img{
+                        width: 100%;
+                        max-width: 3.14rem;
+                        animation: bounce 3s infinite alternate;
+        
+                        @keyframes bounce {
+                            from {
+                                transform: translateY(0rem);
+                              }
+                              to {
+                                transform: translateY(-1.1rem);
+                              }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+
+    @media(max-width: 600px){
+
+        .features-wrapper{
+            display: flex;
+        }
+    }
     }
 }
 
@@ -174,6 +344,7 @@
     padding-top: 16rem;
     padding-bottom: 8rem;
     overflow: hidden;
+
 
     .container{
         display: flex;
@@ -201,8 +372,8 @@
                 justify-content: flex-start;
                 align-items: center;
                 gap: 4.657rem;
-                width: 50rem;
-                height: 6rem;
+                width: 100%;
+                max-width: 50rem;
 
                 span{
                     font-weight: 400;
@@ -219,16 +390,98 @@
                 width: 100%;
                 transition: all .3s ease;
                 animation: expand 7s infinite alternate;
-                
+            }
+        }
+    }
 
-                @keyframes expand {
-                    from{
-                        transform: scale(1);
-                    }
+    @media (max-width:1350px){
+        background-position: center;
+        
 
-                    to {
-                        transform: scale(1.05);
-                    }
+        .container{
+            gap: 1rem;
+            
+        }
+    }
+
+    @media (max-width:1250px){
+        height: auto;
+        background-size: cover;
+        .container{
+                align-items: center;
+                position: relative;
+
+            .history-info{
+                position: absolute;
+                align-self: flex-end;
+                z-index: 2;
+                p{
+                    color: #FFFFFF;
+                }
+            }
+
+            .main-characteres{
+                opacity: 0.7;
+                position: absolute;
+                align-self: flex-end;
+                right: 1rem;
+
+            }
+        }
+    }
+
+    @media (max-width:991px){
+
+        .container{
+            height: auto;
+            align-items: center;
+            flex-direction: column-reverse;
+            justify-content: center;
+            position: static;        
+            gap: 3rem;
+
+            .history-info{
+                text-align: center;
+                align-self: center;
+                position: static;
+                justify-content: center;
+            }
+
+            .main-characteres{
+                align-self: center;
+                position: static;
+                opacity: 1;
+            }
+        }
+    }
+
+
+    @media (max-width: 600px){
+        
+
+        .container{
+            justify-content: center;
+            align-items: center;
+        
+            .history-info{
+                margin-top: 5rem;
+                text-align: center;
+
+
+                h2{
+                    font-size: 3rem;
+                }
+
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+
+            .company{
+                justify-content: center !important;
+                max-width: 100%;
+                span{
+                    display: none;
                 }
             }
         }
