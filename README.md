@@ -1,7 +1,6 @@
 # God of War Page
 
-
-![GOW page](https://user-images.githubusercontent.com/90868283/204041726-a38cb8d8-6d15-4235-b534-ef1793856fff.png)
+![image](https://user-images.githubusercontent.com/90868283/204042347-44a8eea0-fc08-40ff-891c-7e8a8a33f6cf.png)
 
 
 💻 Tecnologias: HTML - CSS - Sass - JavaScript
