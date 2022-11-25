@@ -44,7 +44,7 @@ var swiper_features = new Swiper(".features", {
     },
 
     600: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
       spaceBetween: 10
     },
 
