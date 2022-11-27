@@ -207,7 +207,6 @@
         padding: 2rem 0;
 
         .container{
-            padding: 1rem 5rem;
 
             .left{
                 h1{
@@ -429,6 +428,7 @@
     }
 
     @media (max-width:991px){
+        
 
         .container{
             height: auto;
@@ -452,7 +452,6 @@
             }
         }
     }
-
 
     @media (max-width: 600px){
         
