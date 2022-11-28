@@ -1,5 +1,6 @@
 # God of War Page
-![gow](https://user-images.githubusercontent.com/90868283/204167358-5dda018b-b002-4229-849e-f60bc02be4db.png)
+
+![Captura de Tela (7)](https://user-images.githubusercontent.com/90868283/204167621-9b4896f1-b397-406b-9a11-42038ced88e5.png)
 
 
 
